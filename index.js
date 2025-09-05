@@ -3,11 +3,11 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import authRoutes from "./routes/auth.js";
-import patientRoutes from "./routes/patients.js";
-import physicianRoutes from "./routes/physicians.js";
-import appointmentRoutes from "./routes/appointments.js";
-import chatRoutes from "./routes/chats.js";
+import authRoutes from "./src/routes/auth.js";
+import patientRoutes from "./src/routes/patients.js";
+import physicianRoutes from "./src/routes/physicians.js";
+import appointmentRoutes from "./src/routes/appointments.js";
+import chatRoutes from "./src/routes/chats.js";
 
 dotenv.config();
 const app = express();
