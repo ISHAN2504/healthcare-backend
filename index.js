@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-
+import testRoutes from "./src/routes/test.js"; 
 import authRoutes from "./src/routes/auth.js";
 import patientRoutes from "./src/routes/patients.js";
 import physicianRoutes from "./src/routes/physicians.js";
@@ -12,6 +12,8 @@ import chatRoutes from "./src/routes/chats.js";
 dotenv.config();
 const app = express();
 
+
+app.use("/api/test", testRoutes);
 app.use(cors());
 app.use(express.json());
 
